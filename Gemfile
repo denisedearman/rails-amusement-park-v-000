@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+ 'https://rubygems.org'
 # ruby '2.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -50,7 +50,7 @@ group :test, :development do
 end
 
 group :production do
-  gem "pg"
+  #gem "pg"
   gem "google-analytics-rails"
   gem "rails_12factor"
 end

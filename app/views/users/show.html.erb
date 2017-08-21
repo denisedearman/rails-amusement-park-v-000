@@ -1,0 +1,19 @@
+<% if @message %>
+  <p><%= @message %></p>
+<% end %>
+
+<h1><%=@user.name%></h1>
+<% if @user.admin %>
+  <h2> ADMIN </h2>
+<% end %>
+<h2>Tickets: <%= @user.tickets %></h2>
+<h2>Happiness: <%= @user.happiness %></h2>
+<h2>Nausea: <%= @user.nausea %></h2>
+<h2>Height: <%= @user.height %></h2>
+<h2>Mood: <%= @user.mood %></h2>
+
+<%=link_to "Edit", edit_user_path(@user) %>
+
+<%= link_to "See attractions", attractions_path %>
+
+<%= link_to "Log Out", signout_path %>
